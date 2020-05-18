@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<title>Pretty!</title>
+		
+		<meta charset="utf-8">
+		
+		<style>
+			body {
+				margin: 0;
+				
+				height: 2000px;
+				
+/*				background-image: url(bg.jpg);*/
+				background-image: linear-gradient( 90deg,
+					rgba(255, 0, 0, 1) 0%,
+					rgba(255, 255, 0, 1) 15%,
+					rgba(0, 255, 0, 1) 30%,
+					rgba(0, 255, 255, 1) 50%,
+					rgba(0, 0, 255, 1) 65%,
+					rgba(255, 0, 255, 1) 80%,
+					rgba(255, 0, 0, 1) 100%);
+				
+				background-size: 800px 100px;
+/*				background-position: ;*/
+				
+				-webkit-animation: rainbow 1s infinite linear;
+			}
+			
+			@-webkit-keyframes rainbow {
+			  0%   { background-position: 0 0; }
+			  100% { background-position: 800px 0; }
+			}
+			
+			.pretty {
+				width: 100%;
+				height: 100%;
+				
+				background-color: white;
+				
+				box-sizing: border-box;
+				
+				padding: 200px;
+				text-align: center;
+				
+				position: fixed;
+				
+				color: gray;
+				font-size: 30px;
+				font-family: helvetica;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="pretty">
+			Scroll down…
+		</div>
+	</body>
+</html>
